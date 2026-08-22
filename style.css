@@ -1,0 +1,28 @@
+/*
+css\style.css
+Folhas de estilo do template do site.
+*/
+
+/* importa fonte Robot do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset Geral*/
+
+ * {
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Fonte padrao e tamanho */
+
+html, body {
+     font-family: 'Lucida Sans','Lucida Sans Regular',  'Lucida Grande', 'Lucida Sans Unicode',  Geneva, Verdana, sans-serif;
+    /*
+    A linha acima ativa a unidade de medida "rem" onde:
+     1rem=16px
+     .5rem=8px
+     .25rem=4px
+     2rem=32px
+     3rem= 48px
+    */
+ }
