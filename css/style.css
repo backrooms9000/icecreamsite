@@ -1,0 +1,260 @@
+/*
+css\style.css
+Folhas de estilo do template do site.
+*/
+
+/* importa fonte Robot do google fonts
+Referências: https://fonts.google.com
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+Importa a biblioteca de ícones FontAwesome
+Referências: https://fontawesome.com
+*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css');
+
+
+/*Variaveis com estilo de uso geral */
+:root {
+   --wrap-max-width: 1080px;
+   --defalt-links: steelblue;
+   --defalt-links-houver: orangered;
+   --body-backgroud-image: rgb(150, 68, 68);
+   --body-backgrond-color: purple;
+   --header-backgrond-color: rgb(44, 21, 255);
+   --header-logo-front:rgb(255, 235, 235);
+   --nav-footer-background-color: blue;
+   --nav-footer-background-color: rgb(71, 38, 255);
+   --article-section-background-color: rgb(134, 105, 105);
+   --aside-background-color: rgb(205, 227, 255);
+   --top-search-border:3px dotted rgb(255, 255, 255);
+   --nav-menu-hover-color: rgb(255, 229, 229);
+   --nav-menu-hover-bg-color: rgb(255, 241, 241);
+}
+/* Reset Geral*/
+
+ * {
+    box-sizing: border-box;
+    outline: none;
+}
+/*Elemento raiz*/
+html,
+body {
+   /* Reset nas margens e enchimentos */
+   position: relative; /* permite usar height nos div */
+   margin: 0;
+   padding: 0;
+   height: 100%;
+
+/* Fonte padrao e tamanho */
+     font-family: 'Lucida Sans','Lucida Sans Regular',  'Lucida Grande',  Geneva, sans-serif;
+     font-size: 16px;
+    /*
+    A linha acima ativa a unidade de medida "rem" onde:
+     1rem=16px
+     .5rem ou 0,5rem = 8px
+     .25rem ou 0,25rem = 4px
+     2rem=32px
+     3rem= 48px
+    */
+ }
+
+ /* Reset dos titulos e paragrafos 
+ trocando margin por padding
+ */
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+   margin: 0;
+   padding: .5rem;
+ }
+
+/* Padroniza links */
+a {
+   color: var(--defalt-links);
+    text-decoration: none;
+}
+
+a:hover{
+   color: var(--defalt-links-houver)
+}
+
+/*Tela de fundo*/
+body{
+  /* background: linear-gradient(to right, blue,red,cyan); */
+  /*background-image: var(img/retro-vhs-packaging-indoors.jpg);*/
+  background-color: var(--body-backgroud-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Imagem responsiva */
+.azul {
+   width: auto;
+   max-width: 100%;
+   height: auto;
+}
+
+/* elemento Weap */
+#wrap {
+   max-width: var(--wrap-max-width);
+   margin: auto;
+   position: relative;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+/* cabecalho da pagina */
+
+/* header e filho direto de #wrap (>)
+parente > direct-child */
+#wrap > header {
+   background-color: var(--header-backgroud-color);
+   border-radius: .5rem;
+   margin: .5rem;
+   display: flex;
+   flex-direction: column;
+}
+
+#wrap > header img {
+   display: block;
+   width: 90px;
+   border-radius: 50%;
+   margin: .5rem;
+}
+
+/* Referências: https://www.w3schools.com/css/css3_flexbox.asp */
+.logotitle{
+   display: flex;
+   align-items: center;
+}
+
+.logotitle h1 {
+   font-family: var(-- --header-logo-font);
+   font-weight: bold;
+   /* esperimental: adicionar uma borda ao texto */
+   -webkit-text-stroke: var(--header-title-stroke);
+}
+
+/* Formulario de pesquisa */
+.header-search {
+   padding: 1rem;
+   display: flex;
+   border-top: var(--top-search-border);
+}
+/* Filhos do formulário */
+.header-search input,
+.header-search button {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+
+/* Só com o campo de pesquisa */
+.header-search input {
+    padding: .5rem 1rem;
+    flex-grow: 1;
+    border-radius: .3rem 0 0 .3rem;
+}
+
+.header-search button {
+    padding: .5rem;
+    border-radius: 0 .3rem .3rem 0;
+    cursor: pointer;
+}
+
+/* Menu principal */
+#wrap>nav {
+    background-color: var(--nav-footer-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: .5rem;
+    margin-top: 0;
+    border-radius: .5rem;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#wrap>nav  a :last-child {
+   border-radius:0 .4rem .4rem 0;
+}
+
+#wrap>nav a {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   transition: .2s;
+}
+#wrap>nav a:hover {
+    color: var(--nav-menu-hover-color);
+    background-color: var(--nav-menu-hover-bg-color);
+}
+
+#wrap>nav a i {
+   font-size: 1,8rem;
+   padding-bottom: .25rem;
+}
+
+/* Main e conteúdo principal */
+
+#wrap>main {}
+
+wrap>main section,
+#wrap>main article,
+#wrap>main aside {
+    margin: .5rem;
+    margin-top: 0;
+    border-radius: .5rem;
+}
+
+#wrap>main section,
+#wrap>main article {
+    background-color: var(--article-section-background-color);
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+
+#wrap>main aside {
+   background-color: var(--aside-background-color);
+   padding: 1rem;
+}
+
+
+
+/* Media queries para telas de 640px ou mais */
+@media screen and (min-width: 640px) {
+
+    /* Cabeçalho <header> responsivo */
+    #wrap>header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Formulário de pesquisa responsivo */
+    .header-search {
+        border: none;
+    }
+
+    /* Itens do menu principal responsivos */
+    #wrap>nav a {
+        flex-direction: row;
+        padding: .65rem 1rem;
+    }
+
+    /* Ícones do menu principal */
+    #wrap>nav a i {
+    font-size: 1.2rem;
+    padding-right: .25rem;
+}
+
+
+}

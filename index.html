@@ -4,58 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- importa o CSS do template (principal) -->
-     <link rel="stylesheet" href="style.css">
-    <!-- importa o CSS do Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-crossorigin="anonymous" referrerpolicy="no-referrer="no-referrer" />"
-     <title>FistSteps - Mi boomba</title>
+    <!-- Importa o CSS do template (principal) -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>FirstSteps</title>
 </head>
 
 <body>
 
 <!-- Template usando metodologiam wrap -->
 
-     <div id="wrap"></div>
+     <div id="wrap">
 
-         <header> 
-        <!--lpgptipo cliavel par a pagina incial-->>
-    <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"">
-            <img src="img/zombi.png" alt="Logo">
-        </a>
-        <h1>FistSteps</h1>
-        <form action="https://www.google.com/search" method="get">
-            <input type="search" name="q">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+         <header>
+            <!-- Logotipo clicável para a página inicial -->
+            <div class="logotitle">
+                <a href="index.html">
+                    <img src="img/zombi.png" alt="Logotipo do FirstSteps">
+                </a>
+                <h1>FirstSteps</h1>
+            </div>
 
-</header>
+            <form class="header-search" action="https://www.google.com/search" target="_blank" method="get">
+                <input type="search" name="q">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-fw"></i></button>
+            </form>
 
-<nav>
-        <a href="index.html">inicio</a>
-        <a href="content.html">conteúdo</a>
-         <a href="contatcts.html">contato</a>
-         <a href="about.html">sobre</a>
+        </header>
 
-    </nav>
+  <nav aria-label="Menu principal">
 
+            <a href="index.html" title="Página inicial">
+                <i class="fa-solid fa-house fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="content.html" title="Conteúdo do site" aria-label="Conteúdo do site">
+                <i class="fa-solid fa-file-lines fa-fw"></i>
+                <span>Conteúdo</span>
+            </a>
+            <a href="contacts.html" title="Faça contato" aria-label="Faça contato">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="about.html" title="Mais informações" aria-label="Mais informações">
+                <i class="fa-solid fa-circle-info fa-fw"></i>
+                <span>Sobre</span>
+            </a>
+
+        </nav>
+        
     <main>
 
         <section>
 
         <h2>Título dessa página</h2>
-         <p>class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
+         <p class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
             quam ducimus beatae porro possimus exercitationem consequatur accusantium quis, dicta quas illo
             quasi quia perferen 
             dis nostrumpariatur nesciunt ullam ex. Commodi
             quam ducimus beatae possimus exercit
             ationem consequatur accusantium quis, dicta quas illoquasi quia perferendis nostrum? 
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque paribatur nesciunt ullam qua uci bea
+            Lorem ipsum dolor sit amet, consec       
+            elite
+            Eaque paribatur nesciunt ullam qua uci bea
             tae porro exercitationem consequatur accusantium quis, dicta quas illo quasi quia p
             erferendis nostrum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaquepariatur ne sciunt ullam ex. Com quam ducimus bea
             tae porro possimus exercitationem conjsequatur accusantium quis, dic,ta quas i quia  
-            perferendis nostrum?Lorem ipsum dolor sit amejt, conectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
+            perferendis nostrum?Lorem croassan                                                                            
+            ipsum dolor sit amejt, conectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
             quam ducimus orro possimcatur accusantium quis, dicta quas illo
             quasi quia perferendis nostrum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodiquam ducimus beatae porro possimus exercitationem 
             consequatur accusantiu quis, dicta quas illo quas q
@@ -65,7 +80,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer="no-referrer" />"
                 quasi quia perferendis nostrum!</p>
 
     <p>lista de links</p>
-    <!-- lista nao ordenada -->
+    <!-- lista NAO ordenada -->
     <ul>
         <li><a href="https://www.google.com/">Google</a></li>
         <li><a href="https://www.youtube.com/">Youtube</a></li>
@@ -89,7 +104,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer="no-referrer" />"
 
             <aside>
                 <h3>Coisas axiliares</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate aliquid molestiae harum qui
+                <p>Lorem ipsum, dolor siyit amet consectetur ppppi 
+                    i never now fon havens i am miserable now hay was luken for a job com and i fay the job i haven now because i miserable now inn my life fun is ras a invisible time carren for pie
+                    adipisicing elit. Voluptate aliquid molestiae harum qui
                     voluptatibus sapiente eum totam dolorem.</p>
             </aside>
 
@@ -112,7 +129,9 @@ crossorigin="anonymous" referrerpolicy="no-referrer="no-referrer" />"
 
         </footer>
 
-     </div>
+      <a href="#top" class="float-top"><i class="fa-solid fa-circle-up fa-2x fa-fw"></i></a>
+    </div>
+
 
 </body>
 
