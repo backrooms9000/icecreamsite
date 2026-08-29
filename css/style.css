@@ -15,42 +15,48 @@ Referências: https://fontawesome.com
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css');
 
 
-/*Variaveis com estilo de uso geral */
+/************************************
+ * Variaveis com estilo de uso geral *
+ *************************************/
 :root {
    --wrap-max-width: 1080px;
-   --defalt-links: steelblue;
+   --defalt-links: rgb(25, 19, 80);
    --defalt-links-houver: orangered;
    --body-backgroud-image: rgb(150, 68, 68);
    --body-backgrond-color: purple;
-   --header-backgrond-color: rgb(44, 21, 255);
-   --header-logo-front:rgb(255, 235, 235);
-   --nav-footer-background-color: blue;
-   --nav-footer-background-color: rgb(71, 38, 255);
-   --article-section-background-color: rgb(134, 105, 105);
-   --aside-background-color: rgb(205, 227, 255);
-   --top-search-border:3px dotted rgb(255, 255, 255);
-   --nav-menu-hover-color: rgb(255, 229, 229);
-   --nav-menu-hover-bg-color: rgb(255, 241, 241);
+   --header-backgrond-color: rgb(127, 111, 245);
+   --header-logo-front: Arial, helvetica, sans-serif;
+   --header-title-stroke: rgb(61, 61, 82);
+   --nav-footer-background-color: rgb(109, 90, 216);
+   --article-section-background-color: rgba(146, 118, 104, 0.863);
+   --aside-background-color: rgb(78, 94, 114);
+   --top-search-border: 3px dotted rgb(102, 102, 109);
+   --nav-menu-color: rgb(25, 19, 80);
+   --nav-menu-hover-color: rgb(107, 70, 70);
+   --nav-menu-hover-bg-color: rgb(168, 0, 0);
 }
+
 /* Reset Geral*/
 
- * {
-    box-sizing: border-box;
-    outline: none;
+* {
+   box-sizing: border-box;
+   outline: none;
 }
+
 /*Elemento raiz*/
 html,
 body {
    /* Reset nas margens e enchimentos */
-   position: relative; /* permite usar height nos div */
+   position: relative;
+   /* permite usar height nos div */
    margin: 0;
    padding: 0;
    height: 100%;
 
-/* Fonte padrao e tamanho */
-     font-family: 'Lucida Sans','Lucida Sans Regular',  'Lucida Grande',  Geneva, sans-serif;
-     font-size: 16px;
-    /*
+   /* Fonte padrao e tamanho */
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, sans-serif;
+   font-size: 16px;
+   /*
     A linha acima ativa a unidade de medida "rem" onde:
      1rem=16px
      .5rem ou 0,5rem = 8px
@@ -58,41 +64,48 @@ body {
      2rem=32px
      3rem= 48px
     */
- }
+}
 
- /* Reset dos titulos e paragrafos 
+/* Reset dos titulos e paragrafos 
  trocando margin por padding
  */
- h1,
- h2,
- h3,
- h4,
- h5,
- h6,
- p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
    margin: 0;
    padding: .5rem;
- }
+}
 
 /* Padroniza links */
 a {
    color: var(--defalt-links);
-    text-decoration: none;
+   text-decoration: none;
 }
 
-a:hover{
+a:hover {
    color: var(--defalt-links-houver)
 }
 
+/* Imagens responsivas */
+.rimg {
+   width: auto;
+   max-width: 100%;
+   height: auto;
+}
+
 /*Tela de fundo*/
-body{
-  /* background: linear-gradient(to right, blue,red,cyan); */
-  /*background-image: var(img/retro-vhs-packaging-indoors.jpg);*/
-  background-color: var(--body-backgroud-color);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+body {
+   /* background: linear-gradient(to right, blue,red,cyan); */
+   background-color: var(--body-backgroud-image);
+   background-color: var(--body-backgroud-color);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
 }
 
 /* Imagem responsiva */
@@ -107,16 +120,19 @@ body{
    max-width: var(--wrap-max-width);
    margin: auto;
    position: relative;
-   height: 100%;
+
+   min-height: 100%;
    display: flex;
    flex-direction: column;
 }
 
-/* cabecalho da pagina */
+/**********************
+* cabecalho da pagina *
+***********************/
 
 /* header e filho direto de #wrap (>)
 parente > direct-child */
-#wrap > header {
+#wrap>header {
    background-color: var(--header-backgroud-color);
    border-radius: .5rem;
    margin: .5rem;
@@ -124,7 +140,7 @@ parente > direct-child */
    flex-direction: column;
 }
 
-#wrap > header img {
+#wrap>header img {
    display: block;
    width: 90px;
    border-radius: 50%;
@@ -132,9 +148,18 @@ parente > direct-child */
 }
 
 /* Referências: https://www.w3schools.com/css/css3_flexbox.asp */
-.logotitle{
+.logotitle {
    display: flex;
    align-items: center;
+}
+
+/* Logotipo */
+.logotitle img {
+   width: 90px;
+   margin: .5rem;
+   /* Deixa a imagem `quadrada`, redonda */
+   display: block;
+   border-radius: 50%;
 }
 
 .logotitle h1 {
@@ -150,41 +175,46 @@ parente > direct-child */
    display: flex;
    border-top: var(--top-search-border);
 }
+
 /* Filhos do formulário */
 .header-search input,
 .header-search button {
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
+   font-family: inherit;
+   font-size: inherit;
+   border: none;
 }
 
 /* Só com o campo de pesquisa */
 .header-search input {
-    padding: .5rem 1rem;
-    flex-grow: 1;
-    border-radius: .3rem 0 0 .3rem;
+   padding: .5rem 1rem;
+   flex-grow: 1;
+   border-radius: .3rem 0 0 .3rem;
+   flex-grow: 1;
 }
 
 .header-search button {
-    padding: .5rem;
-    border-radius: 0 .3rem .3rem 0;
-    cursor: pointer;
+   padding: .5rem;
+   border-radius: 0 .3rem .3rem 0;
+   cursor: pointer;
 }
 
 /* Menu principal */
 #wrap>nav {
-    background-color: var(--nav-footer-background-color);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin: .5rem;
-    margin-top: 0;
-    border-radius: .5rem;
-    border: 1px solid rgb(0, 0, 0);
+   background-color: var(--nav-footer-background-color);
+   display: flex;
+   align-items: center;
+
+   margin: .5rem;
+   margin-top: 0;
+   border-radius: .5rem;
+   border: 1px solid rgb(0, 0, 0);
+   justify-content: end;
+
+
 }
 
-#wrap>nav  a :last-child {
-   border-radius:0 .4rem .4rem 0;
+#wrap>nav a :last-child {
+   border-radius: 0 .4rem .4rem 0;
 }
 
 #wrap>nav a {
@@ -193,33 +223,43 @@ parente > direct-child */
    align-items: center;
    transition: .2s;
 }
+
 #wrap>nav a:hover {
-    color: var(--nav-menu-hover-color);
-    background-color: var(--nav-menu-hover-bg-color);
+   color: var(--nav-menu-hover-color);
+   background-color: var(--nav-menu-hover-bg-color);
 }
 
 #wrap>nav a i {
-   font-size: 1,8rem;
+   font-size: 1, 8rem;
    padding-bottom: .25rem;
 }
 
 /* Main e conteúdo principal */
 
-#wrap>main {}
+#wrap>main {
+   position: relative;
+   height: 100%;
+   display: flex;
+   /* Posiciona os filhos em linhas, um sobre o outro */
+   flex-direction: column;
+
+   /* Forçar o footer no final da tela */
+   flex-grow: 1;
+}
 
 wrap>main section,
 #wrap>main article,
 #wrap>main aside {
-    margin: .5rem;
-    margin-top: 0;
-    border-radius: .5rem;
+   margin: .5rem;
+   margin-top: 0;
+   border-radius: .5rem;
 }
 
 #wrap>main section,
 #wrap>main article {
-    background-color: var(--article-section-background-color);
-    padding: 1.5rem;
-    line-height: 1.5;
+   background-color: var(--article-section-background-color);
+   padding: 1.5rem;
+
 }
 
 #wrap>main aside {
@@ -227,34 +267,161 @@ wrap>main section,
    padding: 1rem;
 }
 
+/* rodape */
 
+#wrap>footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--nav-footer-background-color);
+   margin: 0 .5rem;
+   border-radius: .5rem;
+   color: white;
+}
+
+/* Hack para margem do último elemento */
+.end-margin {
+   font-size: .4rem;
+}
+
+#wrap>footer a:hover {
+   color: var(--nav-menu-hover-color);
+   background-color: var(--nav-menu-hover-bg-color);
+}
+
+/* Links para a home e topo da página */
+#wrap>footer a {
+   font-size: 2rem;
+   color: var(--nav-menu-color);
+   padding: .25rem;
+}
+
+#wrap>footer a :first-child {
+   border-radius: .4px 0 0 .4px;
+}
+
+/* Seleciona somente o último elemento filho do tipo <a> */
+#wrap>footer a:last-child {
+   border-radius: 0 .4rem .4rem 0;
+}
+
+/* ========================================
+   AVISO DE COOKIES
+   ======================================== */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 20px;
+
+    background-color: #ffffff;
+    color: #222222;
+
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+
+    z-index: 9999;
+}
+
+.cookie-text {
+    flex: 1;
+}
+
+.cookie-text strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cookie-text p {
+    margin: 0;
+}
+
+#cookie-accept {
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #004953;
+    color: white;
+
+    cursor: pointer;
+}
+
+#cookie-accept:hover {
+    opacity: 0.85;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+
+    .cookie-banner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #cookie-accept {
+        width: 100%;
+    }
+
+}
 
 /* Media queries para telas de 640px ou mais */
 @media screen and (min-width: 640px) {
 
-    /* Cabeçalho <header> responsivo */
-    #wrap>header {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
+   /* Cabeçalho <header> responsivo */
+   #wrap>header {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+   }
 
-    /* Formulário de pesquisa responsivo */
-    .header-search {
-        border: none;
-    }
+   /* Formulário de pesquisa responsivo */
+   .header-search {
+      border: none;
+   }
 
-    /* Itens do menu principal responsivos */
-    #wrap>nav a {
-        flex-direction: row;
-        padding: .65rem 1rem;
-    }
+   /* Itens do menu principal responsivos */
+   #wrap>nav a {
+      flex-direction: row;
+      padding: .65rem 1rem;
+   }
 
-    /* Ícones do menu principal */
-    #wrap>nav a i {
-    font-size: 1.2rem;
-    padding-right: .25rem;
+
+   /* Ícones do menu principal */
+   #wrap>nav a i {
+      font-size: 1.2rem;
+      padding-right: .25rem;
+   }
+
 }
 
+/*quando a largura de tela for de 768px ou mais*/
+@media screen and (min-width: 768px) {
 
+   #wrap>main {
+      /*posiciona os filhos em linha, um sobre o outro*/
+      flex-direction: row;
+   }
+
+   /* Elemento com conteúdo auxiliar */
+   #wrap>main aside {
+      margin-left: 0;
+
+      /*Fixa a lagura do <aside> em 220px */
+      min-width: 220px;
+      max-width: 220px;
+   }
 }

@@ -1,138 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Importa o CSS do template (principal) -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/heard.jpg" />
     <title>FirstSteps</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Template usando metodologiam wrap -->
 
-<!-- Template usando metodologiam wrap -->
+    <div id="wrap">
+      <header>
+        <!-- Logotipo clicável para a página inicial -->
+        <div
+          class="logotitle"
+          title="clique para a pagina inicial"
+          aria-label="clique para a pagina inicial"
+        >
+          <a href="index.html" id="" mylogo>
+            <img src="img/heard.jpg" alt="Logotipo do FirstSteps" />
+          </a>
+          <h1>FirstSteps</h1>
+        </div>
 
-     <div id="wrap">
+        <form
+          class="header-search"
+          action="https://www.google.com/search"
+          target="_blank"
+          method="get"
+        >
+          <input type="search" name="q" placeholder="pesquisar..." />
+          <button
+            type="submit"
+            title="Clique para pesquisar"
+            aria-label="Clique para pesquisar"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-fw"
+            ></i>
+          </button>
+        </form>
+      </header>
 
-         <header>
-            <!-- Logotipo clicável para a página inicial -->
-            <div class="logotitle">
-                <a href="index.html">
-                    <img src="img/zombi.png" alt="Logotipo do FirstSteps">
-                </a>
-                <h1>FirstSteps</h1>
-            </div>
+      <nav aria-label="Menu principal">
+        <a href="index.html" title="Página inicial">
+          <i class="fa-solid fa-house fa-fw"></i>
+          <span>Início</span>
+        </a>
+        <a
+          href="content.html"
+          title="Conteúdo do site"
+          aria-label="Conteúdo do site"
+        >
+          <i class="fa-solid fa-file-lines fa-fw"></i>
+          <span>Conteúdo</span>
+        </a>
+        <a href="contacts.html" title="Faça contato" aria-label="Faça contato">
+          <i class="fa-solid fa-comments fa-fw"></i>
+          <span>Contatos</span>
+        </a>
+        <a
+          href="about.html"
+          title="Mais informações"
+          aria-label="Mais informações"
+        >
+          <i class="fa-solid fa-circle-info fa-fw"></i>
+          <span>Sobre</span>
+        </a>
+      </nav>
 
-            <form class="header-search" action="https://www.google.com/search" target="_blank" method="get">
-                <input type="search" name="q">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-flip-horizontal fa-fw"></i></button>
-            </form>
-
-        </header>
-
-  <nav aria-label="Menu principal">
-
-            <a href="index.html" title="Página inicial">
-                <i class="fa-solid fa-house fa-fw"></i>
-                <span>Início</span>
-            </a>
-            <a href="content.html" title="Conteúdo do site" aria-label="Conteúdo do site">
-                <i class="fa-solid fa-file-lines fa-fw"></i>
-                <span>Conteúdo</span>
-            </a>
-            <a href="contacts.html" title="Faça contato" aria-label="Faça contato">
-                <i class="fa-solid fa-comments fa-fw"></i>
-                <span>Contatos</span>
-            </a>
-            <a href="about.html" title="Mais informações" aria-label="Mais informações">
-                <i class="fa-solid fa-circle-info fa-fw"></i>
-                <span>Sobre</span>
-            </a>
-
-        </nav>
-        
-    <main>
-
+      <main>
         <section>
+          <h2>Título dessa página</h2>
 
-        <h2>Título dessa página</h2>
-         <p class="azul">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
-            quam ducimus beatae porro possimus exercitationem consequatur accusantium quis, dicta quas illo
-            quasi quia perferen 
-            dis nostrumpariatur nesciunt ullam ex. Commodi
-            quam ducimus beatae possimus exercit
-            ationem consequatur accusantium quis, dicta quas illoquasi quia perferendis nostrum? 
-            Lorem ipsum dolor sit amet, consec       
-            elite
-            Eaque paribatur nesciunt ullam qua uci bea
-            tae porro exercitationem consequatur accusantium quis, dicta quas illo quasi quia p
-            erferendis nostrum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaquepariatur ne sciunt ullam ex. Com quam ducimus bea
-            tae porro possimus exercitationem conjsequatur accusantium quis, dic,ta quas i quia  
-            perferendis nostrum?Lorem croassan                                                                            
-            ipsum dolor sit amejt, conectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
-            quam ducimus orro possimcatur accusantium quis, dicta quas illo
-            quasi quia perferendis nostrum?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodiquam ducimus beatae porro possimus exercitationem 
-            consequatur accusantiu quis, dicta quas illo quas q
-             uia perferendis nostrum</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex. Commodi
-                quam ducimus beatae porro possimus exercitationem consequatur accusantium quis, dicta quas illo
-                quasi quia perferendis nostrum!</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+            pariatur nesciunt ullam ex. Commodi quam ducimus beatae porro
+            possimus exercitationem consequatur accusantium quis, dicta quas
+            illo quasi quia perferen scoba papoi dis nostrumpariatur nesciunt
+            ullam ex. Commodi quam ducimus beatae possimus exercit ationem
+            consequatur accusantium quis, dicta quas illoquasi quia perferendis
+            nostrum? Lorem ipsum dolor sit amet, consec elite Eaque paribatur
+            nesciunt ullam qua uci bea tae porro exercitationem consequatur
+            accusantium quis, dicta quas illo quasi quia p erferendis
+            nostrum?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Eaquepariatur ne sciunt ullam ex. Com quam ducimus bea tae porro
+            possimus exercitationem conjsequatur accusantium quis, dic,ta quas i
+            quia perferendis nostrum?Lorem croassan ipsum dolor sit amejt,
+            conectetur adipisicing elit. Eaque pariatur nesciunt ullam ex.
+            Commodi quam ducimus orro possimcatur accusantium quis, dicta quas
+            illo quasi quia perferendis nostrum?Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Eaque pariatur nesciunt ullam ex.
+            Commodiquam ducimus beatae porro possimus exercitationem consequatur
+            accusantiu quis, dicta quas illo quas q uia perferendis nostrum
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+            pariatur nesciunt ullam ex. Commodi quam ducimus beatae porro
+            possimus exercitationem consequatur accusantium quis, dicta quas
+            illo quasi quia perferendis nostrum!
+          </p>
 
-    <p>lista de links</p>
-    <!-- lista NAO ordenada -->
-    <ul>
-        <li><a href="https://www.google.com/">Google</a></li>
-        <li><a href="https://www.youtube.com/">Youtube</a></li>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-    </ul>
+          <p>lista de links</p>
+          <!-- lista NAO ordenada -->
+          <ul>
+            <li><a href="https://google.com/" target="_blank">Google</a></li>
+            <li><a href="https://facebook.com/" target="_blank">Youtube</a></li>
+            <li><a href="https://youtube.com/" target="_blank">Facebook</a></li>
+          </ul>
 
-           <img src="img/gril.png" alt="logo">
+          <img src="img/gril.png" alt="logo" class="rimg" />
 
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius libero quos, commodi explicabo
-                    voluptates voluptas temporibus nam facilis dolorum, dicta rerum repellendus! Minima numquam deleniti
-                    sapiente quibusdam, vero molestias.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe pariatur voluptatem sequi deserunt id?
-                    Odio modi ex voluptatem et voluptate itaque earum recusandae soluta? Molestias suscipit esse
-                    cupiditate doloribus eum!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eius
+            libero quos, commodi explicabo voluptates voluptas temporibus nam
+            facilis dolorum, dicta rerum repellendus! Minima numquam deleniti
+            sapiente quibusdam, vero molestias.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            pariatur voluptatem sequi deserunt id? Odio modi ex voluptatem et
+            voluptate itaque earum recusandae soluta? Molestias suscipit esse
+            cupiditate doloribus eum!
+          </p>
 
-                <!--Folha de estilo "inline"-->
-                <p class="azul">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora commodi, dicta aliquam
-                    beatae sint libero similique necessitatibus quod ratione deleniti consequuntur amet aperiam aut.
-                    Commodi quia dicta cupiditate odit provident.</p>
-           </section>
+          <!--Folha de estilo "inline"-->
+          <p class="azul">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora
+            commodi, dicta aliquam beatae sint libero similique necessitatibus
+            quod ratione deleniti consequuntur amet aperiam aut. Commodi quia
+            dicta cupiditate odit provident.
+          </p>
+        </section>
 
-            <aside>
-                <h3>Coisas axiliares</h3>
-                <p>Lorem ipsum, dolor siyit amet consectetur ppppi 
-                    i never now fon havens i am miserable now hay was luken for a job com and i fay the job i haven now because i miserable now inn my life fun is ras a invisible time carren for pie
-                    adipisicing elit. Voluptate aliquid molestiae harum qui
-                    voluptatibus sapiente eum totam dolorem.</p>
-            </aside>
+        <aside>
+          <h3>Coisas axiliares</h3>
+          <p>
+            Lorem ipsum, dolor siyit amet consectetur padipisicing elit.
+            Voluptate aliquid molestiae harum qui voluptatibus sapiente eum
+            totam dolorem.
+          </p>
+        </aside>
+      </main>
 
-        </main>
-
-        <footer>
- 
-         <!--pagina inicial-->
-         <a href="index.html">
-            <i class="fa-solid fa-house" fa-fw></i>
+      <footer>
+        <!--pagina inicial-->
+        <a href="index.html">
+          <i class="fa-solid fa-house" fa-fw></i>
         </a>
 
         <!-- mensagem de propriedade e licença -->
-        <div>copy; 2026 wyiro</div>
+        <div>&copy; 2026 Wyiro</div>
 
-             <!-- topo da página -->
-            <a href="#top">
-                <i class="fa-solid fa-arrow-up" fa-fw></i>
-            </a>
+        <!-- topo da página -->
+        <a href="#top">
+          <i class="fa-solid fa-arrow-up" fa-fw></i>
+        </a>
+      </footer>
 
-        </footer>
-
-      <a href="#top" class="float-top"><i class="fa-solid fa-circle-up fa-2x fa-fw"></i></a>
+      <a href="#top" class="float-top"
+        ><i class="fa-solid fa-circle-up fa-2x fa-fw"></i
+      ></a>
     </div>
 
+    <!-- Aviso de cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+      <div>
+        class="cookie-text">
+        <strong>🍪 Este site utiliza cookies</strong>
+        <p>
+          Utilizamos cookies para melhorar sua experiencia de navegacão. Ao
+          continuar navegando, voce concorda com o uso de cookies.
+        </p>
+      </div>
 
-</body>
+      <button id="cookie-acept" type="button">Aceitar</button>
+    </div>
 
+    <script>
+      const pageName = "PageHome";
+    </script>
+    <script src="js/javascript.js"></script>
+  </body>
 </html>
