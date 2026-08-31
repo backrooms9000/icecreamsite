@@ -21,9 +21,9 @@ Referências: https://fontawesome.com
 :root {
    --wrap-max-width: 1080px;
    --defalt-links: rgb(25, 19, 80);
-   --defalt-links-houver: orangered;
-   --body-backgroud-image: rgb(150, 68, 68);
-   --body-backgrond-color: purple;
+   --defalt-links-houver: rgb(89, 0, 255);
+   --body-backgroud-image: url("../img/bg02.png");
+   --body-backgrond-color: #800080;
    --header-backgrond-color: rgb(127, 111, 245);
    --header-logo-front: Arial, helvetica, sans-serif;
    --header-title-stroke: rgb(61, 61, 82);
@@ -31,9 +31,9 @@ Referências: https://fontawesome.com
    --article-section-background-color: rgba(146, 118, 104, 0.863);
    --aside-background-color: rgb(78, 94, 114);
    --top-search-border: 3px dotted rgb(102, 102, 109);
-   --nav-menu-color: rgb(25, 19, 80);
-   --nav-menu-hover-color: rgb(107, 70, 70);
-   --nav-menu-hover-bg-color: rgb(168, 0, 0);
+   --nav-menu-color: rgb(21, 12, 37);
+   --nav-menu-hover-color: rgb(161, 186, 233);
+   --nav-menu-hover-bg-color: rgb(79, 34, 116);
 }
 
 /* Reset Geral*/
@@ -100,7 +100,7 @@ a:hover {
 /*Tela de fundo*/
 body {
    /* background: linear-gradient(to right, blue,red,cyan); */
-   background-color: var(--body-backgroud-image);
+   background-image: var(--body-backgroud-image);
    background-color: var(--body-backgroud-color);
    background-position: center;
    background-repeat: no-repeat;
@@ -276,7 +276,7 @@ wrap>main section,
    background-color: var(--nav-footer-background-color);
    margin: 0 .5rem;
    border-radius: .5rem;
-   color: white;
+   color: rgb(0, 0, 0);
 }
 
 /* Hack para margem do último elemento */
@@ -322,13 +322,13 @@ wrap>main section,
 
     padding: 20px;
 
-    background-color: #ffffff;
-    color: #222222;
+    background-color: #bdb5b5;
+    color: #181536;
 
-    border: 1px solid #cccccc;
+    border: 1px solid #627776;
     border-radius: 10px;
 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 20px rgba(86, 103, 117, 0.25);
 
     z-index: 9999;
 }
@@ -353,7 +353,7 @@ wrap>main section,
     border-radius: 5px;
 
     background-color: #004953;
-    color: white;
+    color: rgb(233, 227, 227);
 
     cursor: pointer;
 }
